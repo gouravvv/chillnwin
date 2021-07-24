@@ -1,0 +1,39 @@
+.container{
+    background-color: #262626;
+    color: white;
+    width: 50%;
+    min-width: 280px;
+    margin: auto;
+    padding: 20px 20px;
+    border-radius: 12px;
+}
+.container form{
+    font-size: 18px;
+}
+.container form input{
+    width: 275px;
+    height: 35px;
+    margin: 5px 0px;
+    border-radius: 7px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.container form label{
+  
+     padding: 5px;
+    box-sizing: border-box;
+}
+.container form input #submit:hover{
+    font-weight: bold;
+}
+.container form input.radio{
+    width: 17px;
+}
+.container form label.radioo{
+    position: relative;
+    top: -11px;
+}
+.container form p.para{
+    margin-bottom: 1px;
+}
+

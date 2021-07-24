@@ -1,0 +1,174 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+header .logo{
+    /* color: #fff; */
+    height: 70px;
+    /* line-height: 50px; */
+    /* font-size: 24px; */
+    /* font-weight: bold; */
+    float: right;
+}
+header .logo img{
+    margin: 0;
+    padding: 0;
+    height: 83px;
+    width: 132px;
+}
+
+header nav{
+    float: left;
+}
+header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li{
+  list-style: none;
+}
+header nav ul li a{
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+  display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    background: #2196f3;
+}
+.menu-toggle{
+    color: #fff;
+    float: left;
+    line-height: 70px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+marquee{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    color: white;
+    line-height: 40px;
+    height: 40px;
+    font-size: 20px;
+    position: fixed;
+    top: 70px;
+    z-index: 1;
+    }
+    marquee p{
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+    display: inline;
+
+    }
+
+    .box{
+        display: flex;
+        position: relative;
+        top: 110px;
+        margin: 0;
+        padding: 4px;
+       justify-content: center;
+        
+        box-sizing: border-box;
+    }
+    .boxx{
+        min-width: 275px;
+width: 50%;
+margin: 10px;
+padding: 20px 5px;
+box-sizing: border-box;
+border-radius: 10px;
+background-color: lightgreen;
+
+    }
+   
+    .boxx img{
+        display: block;
+        width: 50px;
+        margin: 5px auto;
+        height: 50px;
+    }
+    .boxx p{
+        text-align: center;
+        font-size: 12px;
+    }
+    a.button{
+        text-decoration: none;
+color: black;
+padding: 2px;
+box-sizing: border-box;
+border: 1px solid;
+display: block;
+margin: 0 auto;
+text-align: center;
+width: 90px;
+    }
+    a.button:hover{
+      font-weight: bold;
+
+    }
+    #step{
+        padding-top: 16px;
+    }
+    #step p{
+        text-align: left;
+padding-left: 45px;
+    }
+@media only screen and (max-width: 991px){
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    
+    header nav{
+        /* display: none; */
+        position: absolute;
+        width: 100%;
+        
+        /* height: calc(100vh - 50px); */
+        top: 70px;
+        left:-100%;
+        background: #333;
+        transition: .5s;
+    }
+    header nav.active{
+        /* display: block; */
+        left: 0%;
+       
+
+    }
+    
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a{
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    .box{
+        flex-direction: column;
+       align-items: center;
+    }
+}

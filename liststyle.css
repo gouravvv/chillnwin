@@ -1,0 +1,133 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 2;
+}
+header .logo{
+    /* color: #fff; */
+    height: 70px;
+    /* line-height: 50px; */
+    /* font-size: 24px; */
+    /* font-weight: bold; */
+    float: right;
+}
+header .logo img{
+    margin: 0;
+    padding: 0;
+    height: 83px;
+    width: 132px;
+}
+
+header nav{
+    float: left;
+}
+header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li{
+  list-style: none;
+}
+header nav ul li a{
+  height: 70px;
+  line-height: 70px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+  display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    background: #2196f3;
+}
+.menu-toggle{
+    color: #fff;
+    float: left;
+    line-height: 70px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.container{
+    background-color: #262626;
+    color: white;
+    width: 57%;
+    min-width: 280px;
+    margin: auto;
+    padding: 20px 20px;
+    border-radius: 12px;
+    position: relative;
+    top: 78px;
+}
+#he{
+    text-align: center;
+}
+.up{
+    display: flex;
+    justify-content: space-around;
+}
+#winners{
+    border: 1px solid white;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 1px;
+    padding: 5px 15px;
+}
+#winners thead{
+   text-align: justify;
+}
+
+
+
+@media only screen and (max-width: 991px){
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    
+    header nav{
+        /* display: none; */
+        position: absolute;
+        width: 100%;
+        
+        /* height: calc(100vh - 50px); */
+        top: 70px;
+        left:-100%;
+        background: #333;
+        transition: .5s;
+    }
+    header nav.active{
+        /* display: block; */
+        left: 0%;
+       
+
+    }
+    
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a{
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    .up{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
